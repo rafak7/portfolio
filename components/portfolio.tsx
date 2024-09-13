@@ -174,7 +174,7 @@ export function EnhancedPortfolioComponent() {
             <code>
               {`<div>
   <h1>Olá, Mundo!</h1>
-  <p>Esta div não está fechada corretamente.`}
+  <p>Esta div não está fechada corretamente.</p>`}
             </code>
           </pre>
           <p className="mb-4">O que está faltando para fechar a div corretamente?</p>
