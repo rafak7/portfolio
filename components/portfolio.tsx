@@ -480,7 +480,7 @@ export function EnhancedPortfolioComponent() {
       </main>
 
       <footer className="mt-20 py-8 text-center text-gray-400">
-        <p>&copy; 2023 Rafael Lino. All rights reserved.</p>
+        <p>&copy; 2024 Rafael Lino. All rights reserved.</p>
       </footer>
     </div>
   )
