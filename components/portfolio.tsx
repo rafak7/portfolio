@@ -11,7 +11,6 @@ import Image from 'next/image'
 import { FaJava, FaReact, FaPython, FaDocker, FaGitAlt } from 'react-icons/fa'
 import { SiSpringboot, SiKotlin, SiJavascript, SiNextdotjs, SiRabbitmq, SiMongodb } from 'react-icons/si'
 
-// Mock data for GitHub projects
 const projects = [
   {
     name: "Blueguard",
@@ -38,7 +37,6 @@ const projects = [
   }
 ]
 
-// List of technologies/skills
 const skills = [
   { name: "Java", icon: FaJava },
   { name: "Spring Boot", icon: SiSpringboot },
@@ -53,7 +51,6 @@ const skills = [
   { name: "Git", icon: FaGitAlt }
 ]
 
-// Mock data for work experience
 const workExperience = [
   {
     company: "Net4Guest",
@@ -68,7 +65,6 @@ const workExperience = [
   }
 ]
 
-// Mock data for education
 const education = [
   {
     institution: "FIAP",
@@ -90,7 +86,6 @@ const education = [
   }
 ]
 
-// Certifications
 const certifications = [
   {
     name: "Java: aplicando a Orientação a Objetos",
