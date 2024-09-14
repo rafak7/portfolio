@@ -159,6 +159,11 @@ export function EnhancedPortfolioComponent() {
     }
   }
 
+  const handleSkipChallenge = () => {
+    setShowChallenge(false)
+    localStorage.setItem("challengeCompleted", "true")
+  }
+
   if (showChallenge) {
     return (
       <div className="min-h-screen bg-gradient-to-br from-gray-900 to-gray-800 text-white flex items-center justify-center">
@@ -181,10 +186,13 @@ export function EnhancedPortfolioComponent() {
               placeholder="Digite o código faltante"
               className="p-2 mb-4 bg-gray-700 text-white rounded"
             />
-            <button type="submit" className="bg-purple-600 text-white p-2 rounded hover:bg-purple-700 transition-colors">
+            <button type="submit" className="bg-purple-600 text-white p-2 rounded hover:bg-purple-700 transition-colors mb-4">
               Enviar
             </button>
           </form>
+          <button onClick={handleSkipChallenge} className="w-full bg-gray-600 text-white p-2 rounded hover:bg-gray-700 transition-colors">
+            Não sou desenvolvedor, pular desafio
+          </button>
         </div>
       </div>
     )
