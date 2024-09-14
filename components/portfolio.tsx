@@ -137,6 +137,7 @@ export function EnhancedPortfolioComponent() {
   const [activeTab, setActiveTab] = useState("projects")
   const [showChallenge, setShowChallenge] = useState(true)
   const [userInput, setUserInput] = useState("")
+  const [showHint, setShowHint] = useState(false)
 
   useEffect(() => {
     const hasCompletedChallenge = localStorage.getItem("challengeCompleted")
@@ -155,7 +156,10 @@ export function EnhancedPortfolioComponent() {
       setShowChallenge(false)
       localStorage.setItem("challengeCompleted", "true")
     } else {
-      alert("Incorreto! Tente novamente.")
+      const wantHint = window.confirm("Resposta incorreta. Gostaria de uma dica?")
+      if (wantHint) {
+        setShowHint(true)
+      }
     }
   }
 
@@ -190,6 +194,9 @@ export function EnhancedPortfolioComponent() {
               Enviar
             </button>
           </form>
+          {showHint && (
+            <p className="text-yellow-300 mb-4">Dica: Lembre-se de fechar a tag div com a barra invertida.</p>
+          )}
           <button onClick={handleSkipChallenge} className="w-full bg-gray-600 text-white p-2 rounded hover:bg-gray-700 transition-colors">
             Não sou desenvolvedor, pular desafio
           </button>
