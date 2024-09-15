@@ -170,11 +170,11 @@ export function EnhancedPortfolioComponent() {
 
   if (showChallenge) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-gray-900 to-gray-800 text-white flex items-center justify-center">
-        <div className="bg-gray-800 p-8 rounded-lg shadow-lg max-w-md w-full">
+      <div className="min-h-screen bg-gradient-to-br from-gray-900 to-gray-800 text-white flex items-center justify-center p-4">
+        <div className="bg-gray-800 p-6 rounded-lg shadow-lg w-full max-w-md">
           <h2 className="text-2xl font-bold mb-4 text-purple-300">Bem-vindo, Desenvolvedor!</h2>
           <p className="mb-4">Para acessar o site, você precisa resolver este simples desafio de codificação:</p>
-          <pre className="bg-gray-700 p-4 rounded mb-4 overflow-x-auto">
+          <pre className="bg-gray-700 p-4 rounded mb-4 overflow-x-auto text-sm">
             <code>
               {`<div>
   <h1>Olá, Mundo!</h1>
@@ -207,9 +207,9 @@ export function EnhancedPortfolioComponent() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-900 to-gray-800 text-white">
-      <header className="py-20 px-4 sm:px-6 lg:px-8 text-center bg-gradient-to-r from-purple-600 to-indigo-600">
+      <header className="py-12 px-4 sm:px-6 lg:px-8 text-center bg-gradient-to-r from-purple-600 to-indigo-600">
         <motion.h1 
-          className="text-5xl font-extrabold mb-4"
+          className="text-4xl sm:text-5xl font-extrabold mb-4"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
@@ -217,7 +217,7 @@ export function EnhancedPortfolioComponent() {
           Rafael Lino
         </motion.h1>
         <motion.p 
-          className="text-2xl text-purple-200"
+          className="text-xl sm:text-2xl text-purple-200"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
@@ -225,7 +225,7 @@ export function EnhancedPortfolioComponent() {
           Desenvolvedor Backend
         </motion.p>
         <motion.div 
-          className="mt-8 flex justify-center space-x-4"
+          className="mt-6 flex justify-center space-x-4"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.4 }}
@@ -241,7 +241,7 @@ export function EnhancedPortfolioComponent() {
           </a>
         </motion.div>
         <motion.div
-          className="mt-8"
+          className="mt-6"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.6 }}
@@ -252,42 +252,42 @@ export function EnhancedPortfolioComponent() {
         </motion.div>
       </header>
 
-      <main className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+      <main className="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
         <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
-          <TabsList className="grid w-full grid-cols-5 mb-8 bg-gray-800 p-1 rounded-lg">
+          <TabsList className="grid w-full grid-cols-2 sm:grid-cols-3 md:grid-cols-5 mb-8 bg-gray-800 p-1 rounded-lg">
             <TabsTrigger 
               value="projects" 
-              className="px-4 py-2 text-sm font-medium transition-all data-[state=active]:bg-purple-600 data-[state=active]:text-white rounded"
+              className="px-2 py-1 sm:px-4 sm:py-2 text-xs sm:text-sm font-medium transition-all data-[state=active]:bg-purple-600 data-[state=active]:text-white rounded"
             >
               Projetos
             </TabsTrigger>
             <TabsTrigger 
               value="skills" 
-              className="px-4 py-2 text-sm font-medium transition-all data-[state=active]:bg-purple-600 data-[state=active]:text-white rounded"
+              className="px-2 py-1 sm:px-4 sm:py-2 text-xs sm:text-sm font-medium transition-all data-[state=active]:bg-purple-600 data-[state=active]:text-white rounded"
             >
               Habilidades
             </TabsTrigger>
             <TabsTrigger 
               value="experience" 
-              className="px-4 py-2 text-sm font-medium transition-all data-[state=active]:bg-purple-600 data-[state=active]:text-white rounded"
+              className="px-2 py-1 sm:px-4 sm:py-2 text-xs sm:text-sm font-medium transition-all data-[state=active]:bg-purple-600 data-[state=active]:text-white rounded"
             >
               Experiência
             </TabsTrigger>
             <TabsTrigger 
               value="education" 
-              className="px-4 py-2 text-sm font-medium transition-all data-[state=active]:bg-purple-600 data-[state=active]:text-white rounded"
+              className="px-2 py-1 sm:px-4 sm:py-2 text-xs sm:text-sm font-medium transition-all data-[state=active]:bg-purple-600 data-[state=active]:text-white rounded"
             >
               Educação
             </TabsTrigger>
             <TabsTrigger 
               value="certifications" 
-              className="px-4 py-2 text-sm font-medium transition-all data-[state=active]:bg-purple-600 data-[state=active]:text-white rounded"
+              className="px-2 py-1 sm:px-4 sm:py-2 text-xs sm:text-sm font-medium transition-all data-[state=active]:bg-purple-600 data-[state=active]:text-white rounded"
             >
               Certificações
             </TabsTrigger>
           </TabsList>
           <TabsContent value="projects">
-            <section className="mb-20">
+            <section className="mb-12">
               <motion.h2 
                 className="text-3xl font-bold mb-8 text-center text-purple-300"
                 initial={{ opacity: 0, y: 20 }}
