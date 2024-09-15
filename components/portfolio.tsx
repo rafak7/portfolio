@@ -10,6 +10,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import Image from 'next/image'
 import { FaJava, FaReact, FaPython, FaDocker, FaGitAlt } from 'react-icons/fa'
 import { SiSpringboot, SiKotlin, SiJavascript, SiNextdotjs, SiRabbitmq, SiMongodb } from 'react-icons/si'
+import { MobileNav } from './MobileNav'
 
 const projects = [
   {
@@ -253,8 +254,11 @@ export function EnhancedPortfolioComponent() {
       </header>
 
       <main className="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-between items-center mb-8">
+          <MobileNav activeTab={activeTab} setActiveTab={setActiveTab} />
+        </div>
         <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
-          <TabsList className="grid w-full grid-cols-2 sm:grid-cols-3 md:grid-cols-5 mb-8 bg-gray-800 p-1 rounded-lg">
+          <TabsList className="hidden md:grid w-full grid-cols-5 mb-8 bg-gray-800 p-1 rounded-lg">
             <TabsTrigger 
               value="projects" 
               className="px-2 py-1 sm:px-4 sm:py-2 text-xs sm:text-sm font-medium transition-all data-[state=active]:bg-purple-600 data-[state=active]:text-white rounded"
