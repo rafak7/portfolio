@@ -35,6 +35,42 @@ const projects = [
     liveUrl: "https://www.linkedin.com/feed/update/urn:li:activity:7217565917088497665/",
     technologies: ["Java", "Spring Boot", "Docker", "MongoDB"],
     image: "/images/links.png"
+  },
+  {
+    name: "Desafio Magalu Backend",
+    description: "Este projeto é um microserviço de agendamento de notificações desenvolvido com **Java Spring Boot**, utilizando **MySQL** em contêiner **Docker**. Ele permite aos usuários agendar, consultar e cancelar notificações. Também inclui rotinas automáticas com **Spring Scheduler** e logs eficientes com **SLF4J** para monitoramento.",
+    url: "https://github.com/rafak7/magalu-Spring",
+    technologies: ["Java", "Spring Boot", "Docker", "MySQL"],
+    image: "/images/magalu.jpeg"
+  },
+  {
+    name: "Microservice Email",
+    description: "Microserviço Java Spring Boot projetado para envio de e-mails de forma assíncrona, utilizando RabbitMQ para filas e CloudAMQP para gerenciamento em nuvem. Essa solução garante escalabilidade, performance e processamento eficiente de mensagens.",
+    technologies: ["Java", "Spring Boot", "Docker", "PostgreSQL", "RabbitMQ"],
+    url: "https://github.com/rafak7/MS-Email",
+    image: "/images/microservices.jpg"
+  },
+  {
+    name: "Global Solution IOT",
+    description: "Este projeto utiliza técnicas de Machine Learning para prever condições ambientais marítimas, incluindo temperatura, níveis de oxigênio-18 e emissões de CO2. O objetivo é antecipar eventos prejudiciais para a vida marinha. O projeto envolve as etapas de exploração de dados, levantamento de hipótese, criação e treinamento de modelos com validações, e conclusão.",
+    technologies: ["Python", "Matplot", "Pandas", "Scikit-learn"],
+    url: "https://github.com/rafak7/GlobalSolution-IOT",
+    image: "/images/iot.jpeg"
+  },
+  {
+    name: "Desing Code App",
+    description: "Este foi o projeto que foi feito ao decorrer do curso da DesignCode utilizando o novo IOS 17, um app com interface de usuários com animações e filtros, nesse curso aprendi novos recursos como Metal Shaders, Animações em textos e imagens, Keyframe entre outros recursos abordados no curso.",
+    technologies: ["IOS", "Xcode", "SwiftUI"],
+    url: "https://www.linkedin.com/feed/update/urn:li:activity:7185659178047217666/",
+    image: "/images/ios.png"
+  },
+  {
+    name: "Senha Segura",
+    description: "Serviço que valide se uma senha é segura com base em critérios pré-definidos.",
+    technologies: ["Java", "Spring Boot", "Oracle"],
+    url: "https://github.com/rafak7/senhaSegura-Spring",
+    liveUrl: "https://www.linkedin.com/feed/update/urn:li:activity:7216844876485693440/",
+    image: "/images/senha.png"
   }
 ]
 
